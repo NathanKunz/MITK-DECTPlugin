@@ -1,0 +1,6 @@
+<AlphaBlendingTool>
+  <Mode description="DECT80kv/140kv" alphaValue="1.455"/>
+  <Mode description="DECT100kv/140kv" alphaValue="1.7"/>
+  <Mode description="CounT80kv/140kv" alphaValue="1.563"/>
+  <Mode description="CounT100kv/140kv" alphaValue="1.8"/>
+</AlphaBlendingTool>

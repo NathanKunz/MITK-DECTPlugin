@@ -1,0 +1,40 @@
+/**
+\page org_mitk_views_dualenergyctconversion DECT Conversion - Convert Dual energy ct data into relative electron density
+
+\tableofcontents
+
+\warning This view is in an experimental state and not ready for productive use. It is a preview/proof of concept. Use it with caution if you want to use it. If you want to use it, best get in touch with us to clarify it.
+
+\section org_mitk_views_dualenergyctconversion Overview
+This plugin blends two ct image files, with the help of alpha blending into one HU image. For this blending a given alpha value is needed which can either be selected from a 
+predinfed list in the alpha blending module or imported through an extern resource file that can be set in the preference page of the alpha blending module. 
+After this blending the HU image (or any other HU image) can be convertet to a relative energy density iamge. 
+
+\section org_mitk_views_dualenergyctconversion Usage
+<ul>
+	<li>Load two images into MITK. One with a lower voltage level and one with a higher voltage level from a dual energy ct.
+	<ul>
+		<li>Preferably a 3D image, but everything from 2D to 4D images and int,double and float should work.
+	</ul>
+	<li>Open the DECT plugin and select the images.
+
+	<li>Then select the conversion mode with the fitting alpha value or select custom alpha value and type in a custom one or select an extern resource in the preference page.
+	<ul>
+		<li>Per default some standard modes are displayed which are defined in alpha blending module alphaValues.xml files.
+	</ul>
+	<li>Press the Alpha Blend Button.
+	<ul>
+		<li>The blended image should pop up in the image list and be selected standard as the image for the relative electron density conversion
+	</ul>
+	<li>Pres rED Conversion to convert the selected image from HU values to rED values.
+</ul>
+
+\section org_mitk_views_dualenergyctconversion Result
+
+Result should be two images, their names should be the low energy image name + (HU) or (rED)
+
+\subsection org_mitk_views_rttb_RTAnalyzerResultDetails Details
+
+Based on the work of Raza, Mohsin and the following article: Möhler C, Wohlfahrt P, Richter C, Greilich S. Methodological accuracy of image-based electron density assessment using dual-energy computed tomography. Med Phys. 2017 Jun;44(6):2429-2437. doi: 10.1002/mp.12265. Epub 2017 May 20. PMID: 28397977.
+
+*/

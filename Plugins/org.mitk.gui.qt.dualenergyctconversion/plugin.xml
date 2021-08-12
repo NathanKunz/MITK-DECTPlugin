@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+  <extension point="org.blueberry.ui.views">
+    <view id="org.mitk.views.dualenergyctconversion"
+          name="DECT Conversion"
+          class="QmitkDualEnergyCtConversionView"
+          category="RED"
+          icon="resources/DECTIcon.svg" />
+  </extension>
+
+  <extension point="org.blueberry.ui.preferencePages">
+    <page id="org.mitk.gui.qt.application.DualEnergyCtConversionPreferencePage" name="DECT Conversion" class="QmitkDualEnergyCtConversionPreferencePage">
+      <keywordreference id="org.mitk.gui.qt.application.DualEnergyCtConversionPreferencePageKeywords"></keywordreference>
+    </page>
+  </extension>
+  <extension point="org.blueberry.ui.keywords">
+    <keyword id="org.mitk.gui.qt.application.DualEnergyCtConversionPreferencePageKeywords" label="Dual Energy Ct Conversion Preferences"></keyword>
+  </extension>
+
+</plugin>
